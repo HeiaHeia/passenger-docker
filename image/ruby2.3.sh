@@ -4,9 +4,9 @@ source /pd_build/buildconfig
 set -x
 
 minimal_apt_get_install ruby2.3 ruby2.3-dev
-update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.3 191
+update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.3 201
 update-alternatives \
-	--install /usr/bin/ruby ruby /usr/bin/ruby2.3 61 \
+	--install /usr/bin/ruby ruby /usr/bin/ruby2.3 71 \
 	--slave /usr/bin/erb erb /usr/bin/erb2.3 \
 	--slave /usr/bin/testrb testrb /usr/bin/testrb2.3 \
 	--slave /usr/bin/rake rake /usr/bin/rake2.3 \
